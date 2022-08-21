@@ -6,7 +6,7 @@ import 'friendlist/friendListScreen.dart';
 import 'challengeList//challengeHome.dart';
 import 'mypage//myPageScreen.dart';
 import 'Notifications/notiScreen.dart';
-import 'search/campaignScreen.dart';
+import 'campaign/campaignScreen.dart';
 //import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
 //import 'package:flutter/src/scheduler/binding.dart';
 

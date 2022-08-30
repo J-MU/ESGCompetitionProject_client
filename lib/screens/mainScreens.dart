@@ -18,7 +18,7 @@ class MainScreens extends StatefulWidget {
 }
 
 class _MainScreensState extends State<MainScreens> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -26,10 +26,10 @@ class _MainScreensState extends State<MainScreens> {
       body: IndexedStack(
         index: _selectedIndex,
         children: [
+          ChallengeHome(),
           FriendListScreen(),
           NotiScreen(),
-          ChallengeHome(),
-          CampaignScreen(),
+          //CampaignScreen(),
           MyPageScreen()
         ],
       ),

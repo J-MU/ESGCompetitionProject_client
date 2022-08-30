@@ -39,7 +39,8 @@ dependencies:
   google_fonts: ^2.0.0 #font library
   flutter_svg: ^0.21.0-nullsafety.0 #svg file library
   intl: ^0.17.0 #DateFormat, NumberFormat library
-  pull_to_refresh: ^1.6.3 #refresh library
+  pull_to_refresh: 1.6.3 #refresh library
+  font_awesome_flutter: ^9.0.0
 
 dev_dependencies:
   flutter_test:

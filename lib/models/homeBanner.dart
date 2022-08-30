@@ -23,7 +23,7 @@ List<HomeBanner> homeBannerList = [
     bannerImage: "assets/images/banner1.jpg",
     bannerTitle: "오늘의 추천 미션",
     eventTitle: "한 달 동안",
-    eventContent: "15일 이상 텀블러 이용하기",
+    eventContent: "15일 이상\n텀블러 이용하기",
   ),
   HomeBanner(
     bannerImage: "assets/images/banner1.jpg",
@@ -46,7 +46,7 @@ List<HomeBanner> homeBannerList = [
   HomeBanner(
     bannerImage: "assets/images/banner.jpg",
     bannerTitle: "오늘의 추천 미션",
-    eventTitle: "일주일에 3번 이상",
+    eventTitle: "일주일에\n3번 이상",
     eventContent: "자전거로 출/퇴근 하기",
   ),
 ];

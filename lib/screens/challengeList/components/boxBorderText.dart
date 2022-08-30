@@ -19,7 +19,7 @@ class BoxBorderText extends StatelessWidget {
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
           color: Color.fromRGBO(0, 0, 0, 0.1),
-          borderRadius: BorderRadius.circular(30)),
+          borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,

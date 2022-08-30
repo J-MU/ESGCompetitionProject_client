@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'components/myPageHeader.dart';
 
 class MyPageScreen extends StatelessWidget {
   @override
@@ -18,7 +19,18 @@ class MyPageScreen extends StatelessWidget {
         ),
     );
 
-    return Container(child: Text("MyPage Screen"),
+    return Scaffold(
+      body: ListView(
+        children: [
+          MyPageHeader(),
+          const SizedBox(height: 8.0),
+          //CardIconMenu(iconMenuList: iconMenu1),
+          //const SizedBox(height: 8.0),
+          //CardIconMenu(iconMenuList: iconMenu2),
+          //const SizedBox(height: 8.0),
+          //CardIconMenu(iconMenuList: iconMenu3),
+        ],
+      ),
     );
   }
 }

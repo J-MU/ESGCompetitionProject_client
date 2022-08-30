@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../constants.dart';
 import '../../../theme.dart';
-import 'components/recommendChallenge.dart';
-import 'components/mainpage.dart';
-import 'components/myChallengeList.dart';
+import 'components/homePage.dart';
+import 'components/ingMission.dart';
+import 'components/finishMission.dart';
 
 class ChallengeHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // 1
-    List<String> categories = ["주간등수", "진행중 챌린지", "완료한 챌린지"];
+    List<String> categories = ["주간 등수", "진행 중 미션", "완료 미션"];
     // 2
     return DefaultTabController(
       // 3
@@ -21,7 +21,7 @@ class ChallengeHome extends StatelessWidget {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           title: Text(
-          "For Earth",
+          "GREENUS",
           style: GoogleFonts.pacifico(fontSize: 20, color: Colors.white),
         ),
           actions: [
@@ -58,9 +58,9 @@ class ChallengeHome extends StatelessWidget {
         // 8
         body: TabBarView(
           children: [
-            RecommendChallenge(),
-            MainPage(),
-            MyChallengeList()
+            HomePage(),
+            IngMission(),
+            FinishMission()
           ],
         ),
       ),

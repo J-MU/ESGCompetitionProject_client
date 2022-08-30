@@ -1,10 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyPageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text("My Page Screen"),),
+        body: Center(
+          child: Scaffold(
+            appBar: AppBar(
+              automaticallyImplyLeading: false,
+              title: Text(
+                "GREENUS",
+                style: GoogleFonts.pacifico(fontSize: 20, color: Colors.white),
+              ),
+            ),
+          ),
+        ),
+    );
+
+    return Container(child: Text("MyPage Screen"),
     );
   }
 }

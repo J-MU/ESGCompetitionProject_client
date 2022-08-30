@@ -36,6 +36,7 @@ class _HomeRecommendMissionState extends State<HomeRecommendMission> {
                   top: 50,
                   left: 16,
                   child: BoxBorderText(
+                    bannerTitle: list[index].bannerTitle,
                     title: list[index].eventTitle,
                     subTitle: list[index].eventContent,
                   ),

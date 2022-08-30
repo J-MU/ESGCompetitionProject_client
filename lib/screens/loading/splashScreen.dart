@@ -18,7 +18,7 @@ class SplashScreen extends StatelessWidget {
                 flex: 5,
                 child: Center(
                   child: Text(
-                    "For Earth",
+                    "GREENUS",
                     style: GoogleFonts.pacifico(fontSize: 28, color: Colors.white),
                   ),
                 ),

@@ -52,7 +52,7 @@ class ChallengeHome extends StatelessWidget {
                 ),
               ),
             ),
-            preferredSize: Size.fromHeight(42),
+            preferredSize: Size.fromHeight(50),
           ),
         ),
         // 8

@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import '../components/homeRecommendMission.dart';
+import '../components/eachWeeklyRank.dart';
+import '../components/rankDetail.dart';
 import '../components/numberIndicator.dart';
 import '../../../../models/homeBanner.dart';
+import '../../../../models/weeklyRank.dart';
 import '../../../../theme.dart';
 
 class HomePage extends StatelessWidget {

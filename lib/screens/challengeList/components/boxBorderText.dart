@@ -4,10 +4,12 @@ import 'package:google_fonts/google_fonts.dart';
 class BoxBorderText extends StatelessWidget {
   const BoxBorderText({
     Key? key,
+    required this.bannerTitle,
     required this.title,
     required this.subTitle,
   }) : super(key: key);
 
+  final String bannerTitle;
   final String title;
   final String subTitle;
 
@@ -17,11 +19,17 @@ class BoxBorderText extends StatelessWidget {
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
           color: Color.fromRGBO(0, 0, 0, 0.1),
-          borderRadius: BorderRadius.circular(20)),
+          borderRadius: BorderRadius.circular(30)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
+          Text(this.bannerTitle,
+              style:
+              GoogleFonts.nanumGothic(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold)),
+          SizedBox(
+            height: 25,
+          ),
           Text(this.title,
               style:
               GoogleFonts.nanumGothic(fontSize: 28, color: Colors.white)),

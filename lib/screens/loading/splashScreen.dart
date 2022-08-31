@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../constants.dart';
+import '../../models/main_view_model.dart';
 import '../mainScreens.dart';
+import 'package:kbbank_practice/kakao_login.dart';
 
 class SplashScreen extends StatelessWidget {
   static String routeName = "/splash";
+  final viewModel=MainViewModel(KakaoLogin());
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +31,16 @@ class SplashScreen extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.all(24),
                   child: TextButton(
-                    child: Text("Start!"),
-                    onPressed: () {
+                    child: Text(
+                      "logIn!",
+                      style: GoogleFonts.pacifico(fontSize: 16, color: Colors.white),
+                    ),
+                    onPressed: () async {
+                      await viewModel.login();
+                      print("model!!!");
+                      print(viewModel.user?.id);
+                      print(viewModel.user?.properties);
+                      print("model@@!@!#");
                       _completeSplash(context, MainScreens());
                     },
                   ),

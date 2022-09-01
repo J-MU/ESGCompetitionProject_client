@@ -41,6 +41,9 @@ dependencies:
   intl: ^0.17.0 #DateFormat, NumberFormat library
   pull_to_refresh: 1.6.3 #refresh library
   font_awesome_flutter: ^9.0.0
+  kakao_flutter_sdk_user: ^1.2.1
+  dio: ^4.0.6
+
 
 dev_dependencies:
   flutter_test:

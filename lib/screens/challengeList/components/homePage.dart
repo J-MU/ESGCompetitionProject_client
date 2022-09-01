@@ -10,7 +10,7 @@ import '../../../../theme.dart';
 import 'rankDetail.dart';
 
 class HomePage extends StatelessWidget {
-  final List<WeeklyRank> WRList = weeklyRankList;
+  //final List<WeeklyRank> WRList = weeklyRankList;
   @override
   Widget build(BuildContext context) {
     //print("뭐지?????");
@@ -31,7 +31,14 @@ class HomePage extends StatelessWidget {
       ],
     );
     return Scaffold(
-      body: ListView.separated(
+      body: ListView(
+        children: List.generate(
+          weeklyRankList.length,
+              (index) => RankDetail(weeklyRank: weeklyRankList[index]),
+        ),
+      ),
+    );
+      /*body: ListView.separated(
         separatorBuilder: (context, index) => Divider(
           height: 0,
           indent: 16,
@@ -44,7 +51,7 @@ class HomePage extends StatelessWidget {
           );
         },
         itemCount: WRList.length,
-      ),
+      ),*/
       /*child: ListView(
                 padding: const EdgeInsets.all(8),
                 children: [
@@ -55,7 +62,7 @@ class HomePage extends StatelessWidget {
                     },
                     itemCount: productList.length,
                 ]*/
-     );
+     //);
 
    }
 }

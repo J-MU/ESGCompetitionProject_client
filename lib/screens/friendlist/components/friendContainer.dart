@@ -18,7 +18,7 @@ class FriendContainer extends StatelessWidget {
       decoration: const BoxDecoration(
         border: Border(bottom: BorderSide(color: Colors.grey, width: 0.5)),
       ),
-      height: 95,
+      height: 100,
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Row(
@@ -44,13 +44,13 @@ class FriendContainer extends StatelessWidget {
                   const Spacer(),
                   Text(
                     friendList.friendName,
-                    style: textTheme().bodyText1,
+                    style: textTheme().headline1,
                     overflow: TextOverflow.ellipsis,
                   ),
                   const Spacer(),
                   Text(
                     friendList.message,
-                    style: textTheme().bodyText1,
+                    style: textTheme().subtitle1,
                     overflow: TextOverflow.ellipsis,
                   ),
                 ],

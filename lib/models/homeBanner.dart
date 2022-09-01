@@ -17,7 +17,7 @@ List<HomeBanner> homeBannerList = [
     bannerImage: "assets/images/banner.jpg",
     bannerTitle: "오늘의 추천 미션",
     eventTitle: "일주일에",
-    eventContent: "3번 이상\n도시락 싸가기!",
+    eventContent: "3번 이상\n도시락 싸가기",
   ),
   HomeBanner(
     bannerImage: "assets/images/banner1.jpg",

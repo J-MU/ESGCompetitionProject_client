@@ -14,7 +14,29 @@ class RankDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Column(
+      //children: [
+        //Positioned(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+                Text(weeklyRank.name, style: textTheme().bodyText1),
+                const SizedBox(height: 4.0),
+                Text('Lv.${(weeklyRank.level)}'),
+                const SizedBox(height: 4.0),
+                Text(
+                  '스탬프 갯수: ${(weeklyRank.stampNum)}${weeklyRank.stampText}}',
+                  style: textTheme().headline2,
+                ),
+            const Spacer(),
+            ],
+          ),
+    );
+ // }
+            //],
+          //)
+        //)
+      //]
+      /*child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(weeklyRank.name, style: textTheme().bodyText1),
@@ -27,7 +49,7 @@ class RankDetail extends StatelessWidget {
           ),
           const Spacer(),
         ],
-      ),
-    );
+      ),*/
+   // );
   }
 }
